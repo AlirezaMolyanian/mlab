@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lachinani Lab Equipment</title>
+    <link rel="stylesheet" href="./style/formodules.css"/>
     <link rel="stylesheet" href="./style/forindex.css">
+    <link rel="icon" href="./images/top-logo.jpg">
+    <meta name="keywords" content="Lachinani lab Equipment">
 </head>
 
 <body>
     <div class="big-holder">
-        <div class="header">
+    <div class="header">
             <div>
-                <a href="" dir="ltr" class="header-connect">
+                <a href="tel:+989306914729" dir="ltr" class="header-connect">
                     <p>+98 930 691 4729</p>
                     <img src="./images/phone.png" alt="" style="width:30px; height:30px;">
                 </a>
@@ -26,18 +29,21 @@
         </div>
         <div class="main-holder">
             <div class="image-holder">
-                <div class="left-holder">
+                <div class="left-holder" id="left-img">
                     <img src="./images/left.png" alt="">
                 </div>
                 <div class="imager">
-                    <img src="./images/backgroun.jpg" alt="">
+                    <img src="./images/top-img-1.png" alt="">
                 </div>
-                <div class="right-holder">
+                <div class="imager">
+                    <img src="./images/top-img-2.png" alt="">
+                </div>
+                <div class="right-holder" id="right-img">
                     <img src="./images/right.png" alt="">
                 </div>
             </div>
             <div class="logo-holder">
-                <img src="./images/logo.jpg" alt="Lachinani Lab Equipment">
+                <img src="./images/logo.png" alt="Lachinani Lab Equipment">
             </div>
             <div class="products-holder">
                 <div class="products-list">
@@ -206,16 +212,16 @@
         <div class="footer">
             <h4>راه های ارتباطی در فضای مجازی</h4>
             <div class="footer-connection-holder">
-                <a href="">
+                <a href="tel:+989306914729">
                     <img src="./images/phone.png" alt="" class="connection_icon">
                 </a>
-                <a href="">
+                <a href="https://wa.me/+989306914729">
                     <img src="./images/icons8-whatsapp-64.png" alt="" class="connection_icon">
                 </a>
-                <a href="">
+                <a href="tg://resolve?domain=MlachinaniM">
                     <img src="./images/icons8-telegram-app-48.png" alt="" class="connection_icon">
                 </a>
-                <a href="">
+                <a href="https://instagram.com/lachinashvili_mohamad?igshid=YmMyMTA2M2Y=">
                     <img src="./images/icons8-instagram-100.png" alt="" class="connection_icon">
                 </a>
                 <a href="">
@@ -227,23 +233,61 @@
             </div>
         </div>
         <div class="connection_holder">
-            <a href="" class="connections">
+            <a href="tel:+989306914729" class="connections">
                 <img src="./images/phone.png" alt="" class="connection_icon">
             </a>
-            <a href="" class="connections">
+            <a href="https://wa.me/+989306914729" class="connections">
                 <img src="./images/icons8-whatsapp-64.png" alt="" class="connection_icon">
             </a>
-            <a href="" class="connections">
+            <a href="tg://resolve?domain=MlachinaniM" class="connections">
                 <img src="./images/icons8-telegram-app-48.png" alt="" class="connection_icon">
             </a>
-            <a href="" class="connections">
+            <a href="https://instagram.com/lachinashvili_mohamad?igshid=YmMyMTA2M2Y=" class="connections">
                 <img src="./images/icons8-instagram-100.png" alt="" class="connection_icon">
             </a>
-            <a href="" class="connections">
+            <a href="mailto:mail@example.com" class="connections">
                 <img src="./images/icons8-gmail-100.png" alt="" class="connection_icon">
             </a>
         </div>
     </div>
-</body>
+    <script>
 
+        let index = 0;
+        let imageList = document.querySelectorAll(".imager");
+        let imgnum = imageList.length;
+
+        function scroller(){
+            index = (index + 1 ) % imgnum;
+
+            for(let i = 0 ; i<imgnum ; i++){
+                imageList[i].style = "opacity : 0%;"
+            }
+
+            imageList[index].style = "opacity : 100%: z-index : 3;";
+
+        }
+
+        setInterval(scroller , 7000);
+
+        document.getElementById("right-img").addEventListener('click' , () => {
+            index = (index + 1 ) % imgnum;
+
+            for(let i = 0 ; i<imgnum ; i++){
+                imageList[i].style = "opacity : 0%;"
+            }
+
+            imageList[index].style = "opacity : 100%: z-index : 3;";
+        });
+
+        document.getElementById("left-img").addEventListener('click' , () => {
+            index = (index + (imgnum - 1)) % imgnum;
+
+            for(let i = 0 ; i<imgnum ; i++){
+                imageList[i].style = "opacity : 0%;"
+            }
+
+            imageList[index].style = "opacity : 100%: z-index : 3;";
+        });
+    </script>
+</body>
 </html>
