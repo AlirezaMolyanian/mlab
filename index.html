@@ -7,7 +7,7 @@
     <title>Lachinani Lab Equipment</title>
     <link rel="stylesheet" href="./style/formodules.css"/>
     <link rel="stylesheet" href="./style/forindex.css">
-    <link rel="icon" href="./images/top-logo.jpg">
+    <link rel="icon" href="./images/top-logo.png">
     <meta name="keywords" content="Lachinani lab Equipment">
 </head>
 
@@ -24,7 +24,7 @@
                 <h3>Lachinani Lab Equipment</h3>
             </div>
             <div>
-                <img src="./images/top-logo.jpg" alt="image icon">
+                <img src="./images/logo1.png" alt="image icon">
             </div>
         </div>
         <div class="main-holder">
@@ -104,7 +104,7 @@
                     <h3>محصولات شرکت</h3>
                     <div class="products">
                         <div class="product">
-                            <a href=""></a>
+                            <a href="./modules/Laminar.php"></a>
                             <div class="product__image-holder">
                                 <img src="./images/laminar-class-1-2.jpg" alt="">
                             </div>
@@ -229,7 +229,7 @@
                 </a>
             </div>
             <div class="footer-image-holder">
-                <img src="./images/logo.jpg" alt="">
+                <img src="./images/logo1.png" alt="">
             </div>
         </div>
         <div class="connection_holder">
@@ -289,5 +289,18 @@
             imageList[index].style = "opacity : 100%: z-index : 3;";
         });
     </script>
+    <script>
+        // setting the products cast
+        function settingCasts(casts){
+            console.log(casts);
+        }
+
+        fetch("./json-files/cast.json").then(
+            Response => Response.json()
+        ).then(
+            data => settingCasts(data)
+        );
+    </script>
+
 </body>
 </html>

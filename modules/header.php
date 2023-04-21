@@ -9,6 +9,6 @@
                 <h3>Lachinani Lab Equipment</h3>
             </div>
             <div>
-                <img src="../images/top-logo.jpg" alt="image icon">
+                <img src="../images/logo1.png" alt="image icon">
             </div>
         </div>

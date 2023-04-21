@@ -18,6 +18,6 @@
                 </a>
             </div>
             <div class="footer-image-holder">
-                <img src="../images/logo.jpg" alt="">
+                <img src="../images/logo1.png" alt="">
             </div>
         </div>

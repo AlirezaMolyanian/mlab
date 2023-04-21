@@ -6,7 +6,7 @@
     <title>هود لامینار</title>
     <link rel="stylesheet" href="../style/formodules.css"/>
     <link rel="stylesheet" href="../style/forproducts.css"/>
-    <link rel="icon" href="../images/top-logo.jpg">
+    <link rel="icon" href="../images/top-logo.png">
     <meta name="keywords" content="Lachinani lab Equipment">
 </head>
 <body>
@@ -16,10 +16,15 @@
         ?>
         <div class="main-holder">
             <div class="right-holder">
-
+                <?php 
+                    require "./proList.php"
+                ?>
             </div>
             <div class="center-holder">
-                <div class="product-holder">
+                <div class="title-holder">
+                    <h2>محصولات لامینار</h2>
+                </div>
+                <div class="product-holder" style="background-image: url('../images/laminar-class-1-2.jpg')">
                     <h3>نام محصول</h3>
                     <div class="info-holder">
                         <div class="image-holder">
@@ -38,7 +43,7 @@
                             <p>قیمت محصولات</p> 
                         </div>
                     </div>
-                    <div class="text-holder">
+                    <div class="text-holder" style="direction:rtl;">
                         <P>
                         دستگاه هود لامینار وسیله ای است که با ایجاد یک محیط محافظت شده برای کار با نمونه
                          های آزمایشگاهی احتمال آلودگی را برای کاربران، فضای اطراف و نمونه مورد بررسی کاهش می دهد.
@@ -54,7 +59,7 @@
                         </P>
                     </div>
                 </div>
-                <div class="product-holder" style="direction:ltr;">
+                <div class="product-holder" style="direction:ltr; background-image: url('../images/laminar-class-one-power.jpg');">
                     <h3>نام محصول</h3>
                     <div class="info-holder">
                         <div class="image-holder">
@@ -73,7 +78,42 @@
                             <p>قیمت محصولات</p>
                         </div>
                     </div>
-                    <div class="text-holder">
+                    <div class="text-holder" style="direction:rtl;">
+                        <P>
+                        دستگاه هود لامینار وسیله ای است که با ایجاد یک محیط محافظت شده برای کار با نمونه
+                         های آزمایشگاهی احتمال آلودگی را برای کاربران، فضای اطراف و نمونه مورد بررسی کاهش می دهد.
+                         اصول کار هودهای لامینار بدین صورت است که جریان هوا از طریق یک فیلتر
+                          High-Efficiency Particulate HEPA) Air filter) یا Ultra) ULPA Low Particulate Air filter)
+                            تهویه شده و خارج می شود، 
+                            اما بر اساس تعداد
+                             دفعات فیلتر شدن،
+                              به سه گروه یا اصطلاحا به سه کلاس تقسیم می شوند. HEPA و ULPA فیلترهایی هستند
+                               که از درهم تنیده شدن نامنظم الیاف های فایبرگلاس، پوشال یا حصیر
+                                و فشرده شدن آنها ساخته می شود و قابلیت جذب ذرات معلق
+                                 به ظرافت 0.3 میکرومتر را دارد که این اندازه شامل ویروس ها و بخارات سمی نیز می باشد.
+                        </P>
+                    </div>
+                </div>
+                <div class="product-holder" style="background-image: url('../images/laminar-class-2.jpg');">
+                    <h3>هود لامینار کلاس 2</h3>
+                    <div class="info-holder">
+                        <div class="image-holder">
+                            <div class="image-title , image-tem">
+                                <h5>هود لامینار کلاس 2</h5>
+                            </div>
+                            <img src="../images/laminar-class-2.jpg" alt="">
+                            <div class="image-footer , image-tem">
+                                <p>12,900,000</p>
+                            </div>
+                        </div>
+                        <div class="cast-holder">
+                            <p>قیمت محصولات</p>
+                            <p>قیمت محصولات</p>
+                            <p>قیمت محصولات</p>
+                            <p>قیمت محصولات</p>
+                        </div>
+                    </div>
+                    <div class="text-holder" style="direction:rtl;">
                         <P>
                         دستگاه هود لامینار وسیله ای است که با ایجاد یک محیط محافظت شده برای کار با نمونه
                          های آزمایشگاهی احتمال آلودگی را برای کاربران، فضای اطراف و نمونه مورد بررسی کاهش می دهد.
